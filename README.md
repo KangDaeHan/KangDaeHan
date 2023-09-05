@@ -1,8 +1,13 @@
-![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=Welcome&fontAlignY=40&desc=KangDaeHan%20github%20&descSize=20&descAlignY=55&animation=fadeIn&fontSize=90)
+### 👋 Welcome my github
 
+안녕하세요. 프론트개발자 강대한입니다.
+도전적이고 새로운 지식을 배우는 것을 즐기고 있습니다.
 
 <!--
-### 👋 Welcome my github
+
+
+![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=Welcome&fontAlignY=40&desc=KangDaeHan%20github%20&descSize=20&descAlignY=55&animation=fadeIn&fontSize=90)
+
 **KangDaeHan/KangDaeHan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
