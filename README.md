@@ -1,6 +1,8 @@
-### 👋 Welcome my github
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&?text=Welcome%20&desc=Hello%20render&fontSize=90)
+
 
 <!--
+### 👋 Welcome my github
 **KangDaeHan/KangDaeHan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -15,8 +17,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<a href="버튼을 눌렀을 때 이동할 링크" target="_blank"><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=ffffff"/></a>
 <a href="https://twinfamily.github.io" target="_blank"><img src="https://img.shields.io/badge/Blog-121D33?style=flat-square&logo=blogger&logoColor=ffffff"/></a>
-<a href="버튼을 눌렀을 때 이동할 링크" target="_blank"><img src="https://img.shields.io/badge/kdh01217565@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=ffffff"/></a>
 
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
