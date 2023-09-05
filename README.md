@@ -45,7 +45,7 @@ Here are some ideas to get you started:
 - [Skipping the Chrome &quot;Your connection is not private&quot; warning](https://dev.to/gautamkrishnar/quickbits-1-skipping-the-chrome-your-connection-is-not-private-warning-4kp1)
 - [Microsoft Student Partners – Geek is the new rockstar](https://dev.to/gautamkrishnar/microsoft-student-partners--geek-is-the-new-rockstar)
 <!-- BLOG-POST-LIST:END -->
-<br><br>
+
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
 <!--
 ### 📫 Blog
