@@ -39,7 +39,9 @@ Here are some ideas to get you started:
 <br><br>
 ### Blog posts
 <!-- BLOG-POST-LIST:START -->
+
 <!-- BLOG-POST-LIST:END -->
+<br><br>
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
 <!--
 ### 📫 Blog
