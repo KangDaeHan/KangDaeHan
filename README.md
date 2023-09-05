@@ -39,11 +39,11 @@ Here are some ideas to get you started:
 <br><br>
 ### Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [How to prevent GitHub from suspending your cronjob based triggers](https://dev.to/gautamkrishnar/how-to-prevent-github-from-suspending-your-cronjob-based-triggers-knf)
-- [Show your latest dev.to posts automatically on your GitHub profile readme](https://dev.to/gautamkrishnar/show-your-latest-dev-to-posts-automatically-in-your-github-profile-readme-3nk8)
-- [God Mode in browsers: document.designMode = &quot;on&quot;](https://dev.to/gautamkrishnar/god-mode-in-browsers-document-designmode-on-2pmo)
-- [Skipping the Chrome &quot;Your connection is not private&quot; warning](https://dev.to/gautamkrishnar/quickbits-1-skipping-the-chrome-your-connection-is-not-private-warning-4kp1)
-- [Microsoft Student Partners – Geek is the new rockstar](https://dev.to/gautamkrishnar/microsoft-student-partners--geek-is-the-new-rockstar)
+- [Trident: 딥러닝 모델 개발을 위한 도구](https://tech.kakao.com/2023/09/05/kakaobrain-trident/)
+- [PLT Hook 체크를 위한 Android so 파일 파싱](https://meetup.nhncloud.com/posts/371)
+- [NHN Cloud 기술 문서 번역 이야기](https://meetup.nhncloud.com/posts/370)
+- [제3회 Kakao Tech Meet에 초대합니다!](https://tech.kakao.com/2023/08/28/kakao-tech-meet-3/)
+- [이상 탐지 1부-정상과 비정상, 그리고 이상 탐지](https://meetup.nhncloud.com/posts/362)
 <!-- BLOG-POST-LIST:END -->
 
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
