@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 <br><br>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KangDaeHan&layout=compact">
 <br><br>
-### :round_pushpin: 기술 Blog feed
+### :round_pushpin: 기술 blog feed
 <!-- BLOG-POST-LIST:START -->
 - [누구나 할 수 있는 10배 더 빠른 배치 만들기](https://techblog.woowahan.com/13569/)
 - [Trident: 딥러닝 모델 개발을 위한 도구](https://tech.kakao.com/2023/09/05/kakaobrain-trident/)
