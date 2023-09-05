@@ -4,9 +4,8 @@
 <br>
 도전적이고 새로운 지식을 배우는 것을 즐기고 있습니다.
 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KangDaeHan&layout=compact">
 <!--
-
-
 ![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=Welcome&fontAlignY=40&desc=KangDaeHan%20github%20&descSize=20&descAlignY=55&animation=fadeIn&fontSize=90)
 
 **KangDaeHan/KangDaeHan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
