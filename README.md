@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&?text=Welcome&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=Welcome&fontAlignY=40&desc=KangDaeHan%20github%20&descSize=20&descAlignY=55&animation=fadeIn&fontSize=90)
 
 
 <!--
