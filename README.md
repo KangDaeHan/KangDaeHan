@@ -39,11 +39,11 @@ Here are some ideas to get you started:
 <br><br>
 ### Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [누구나 할 수 있는 10배 더 빠른 배치 만들기](https://techblog.woowahan.com/13569/)
 - [Trident: 딥러닝 모델 개발을 위한 도구](https://tech.kakao.com/2023/09/05/kakaobrain-trident/)
 - [PLT Hook 체크를 위한 Android so 파일 파싱](https://meetup.nhncloud.com/posts/371)
 - [NHN Cloud 기술 문서 번역 이야기](https://meetup.nhncloud.com/posts/370)
-- [제3회 Kakao Tech Meet에 초대합니다!](https://tech.kakao.com/2023/08/28/kakao-tech-meet-3/)
-- [이상 탐지 1부-정상과 비정상, 그리고 이상 탐지](https://meetup.nhncloud.com/posts/362)
+- [우아한형제들 PM의 이야기- “배민 기획자의 일”](https://techblog.woowahan.com/13027/)
 <!-- BLOG-POST-LIST:END -->
 
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
