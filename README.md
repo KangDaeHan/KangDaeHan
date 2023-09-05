@@ -36,7 +36,10 @@ Here are some ideas to get you started:
 <a href="#" target="_blank"><img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=ffffff"/></a>
 <br><br>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KangDaeHan&layout=compact">
-
+<br><br>
+### Blog posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
 <!--
 ### 📫 Blog
