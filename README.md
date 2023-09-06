@@ -38,18 +38,17 @@ Here are some ideas to get you started:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KangDaeHan&layout=compact">
 <br><br>
 ### :round_pushpin: 기술 blog feed
-<!-- BLOG-POST-LIST:START -->
-- [누구나 할 수 있는 10배 더 빠른 배치 만들기](https://techblog.woowahan.com/13569/)
-- [Trident: 딥러닝 모델 개발을 위한 도구](https://tech.kakao.com/2023/09/05/kakaobrain-trident/)
-- [PLT Hook 체크를 위한 Android so 파일 파싱](https://meetup.nhncloud.com/posts/371)
-- [NHN Cloud 기술 문서 번역 이야기](https://meetup.nhncloud.com/posts/370)
-- [우아한형제들 PM의 이야기- “배민 기획자의 일”](https://techblog.woowahan.com/13027/)
-- [[신청 시작] 8월 우아한테크세미나: 행정동을 법정동으로, 배민 지리 체계 프로젝트 살펴보기](https://techblog.woowahan.com/13547/)
-- [제3회 Kakao Tech Meet에 초대합니다!](https://tech.kakao.com/2023/08/28/kakao-tech-meet-3/)
-- [컬리로그팀이 직접 고객을 만나고 리서치를 진행한 이야기: 컬리 푸드 페스타에서](http://thefarmersfront.github.io/blog/kurlylog-user-research-in-kurly-food-festa-2023/)
-- [현실 타협은 후퇴다! 안 되는 일을 되게 만드는 PM이란?](https://techblog.woowahan.com/13249/)
-- [우아한테크캠프 6기 교육생들의 7월 회고](https://techblog.woowahan.com/13374/)
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START --><ul><li>[우아한형제들] 
+ ( 2023-09-05)</li></ul><ul><li>[kakao] 
+ ( 2023-09-05)</li></ul><ul><li>[nhncloud] 
+ ( 2023-09-04)</li></ul><ul><li>[nhncloud] 
+ ( 2023-08-30)</li></ul><ul><li>[우아한형제들] 
+ ( 2023-08-29)</li></ul><ul><li>[우아한형제들] 
+ ( 2023-08-29)</li></ul><ul><li>[kakao] 
+ ( 2023-08-28)</li></ul><ul><li>[컬리] 
+ ( 2023-08-27)</li></ul><ul><li>[우아한형제들] 
+ ( 2023-08-24)</li></ul><ul><li>[우아한형제들] 
+ ( 2023-08-22)</li></ul><!-- BLOG-POST-LIST:END -->
 
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
 <!--
