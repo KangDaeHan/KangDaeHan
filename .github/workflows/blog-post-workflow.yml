@@ -18,3 +18,5 @@ jobs:
         with:
           feed_list: "https://tech.kakao.com/feed/,https://meetup.nhncloud.com/rss,https://techblog.woowahan.com/feed/,https://helloworld.kurly.com/feed"
           max_post_count: 10
+          date_format: "UTC: yyyy-mm-dd"
+          feed_names: "[kakao],[nhncloud],[우아한형제들],[컬리]"
