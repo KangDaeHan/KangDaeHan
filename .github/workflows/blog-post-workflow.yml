@@ -20,4 +20,4 @@ jobs:
           max_post_count: 10
           date_format: "UTC: yyyy-mm-dd"
           feed_names: "kakao,nhncloud,우아한형제들,컬리"
-          template: "<ul><li>[feed_names] feed_list ($date)</li></ul>"
+          template: "<ul><li>[$feed_names] $feed_list ($date)</li></ul>"
