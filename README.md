@@ -38,7 +38,7 @@ Here are some ideas to get you started:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KangDaeHan&layout=compact">
 <br><br>
 ### :round_pushpin: 기술 blog feed
-<!-- BLOG-POST-LIST:START --><ul><li>[feed_names] feed_list ( 2023-09-05)</li></ul><ul><li>[feed_names] feed_list ( 2023-09-05)</li></ul><ul><li>[feed_names] feed_list ( 2023-09-04)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-30)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-29)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-29)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-28)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-27)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-24)</li></ul><ul><li>[feed_names] feed_list ( 2023-08-22)</li></ul><!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START --><ul><li>[$feed_names] $feed_list ( 2023-09-05)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-09-05)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-09-04)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-30)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-29)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-29)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-28)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-27)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-24)</li></ul><ul><li>[$feed_names] $feed_list ( 2023-08-22)</li></ul><!-- BLOG-POST-LIST:END -->
 
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
 <!--
