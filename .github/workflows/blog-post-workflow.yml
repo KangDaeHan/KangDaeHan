@@ -20,4 +20,4 @@ jobs:
           max_post_count: 10
           date_format: "UTC:yyyy-mm-dd"
           feed_names: "kakao,nhncloud,우아한형제들,컬리"
-          template: '<div>[$randomEmoji(🪄) $feedName] <a target="_blank" href="$url">$title</a> ($date)</div>'
+          template: '<div>$randomEmoji(🪄)[$feedName] <a target="_blank" href="$url">$title</a> ($date)</div>'
