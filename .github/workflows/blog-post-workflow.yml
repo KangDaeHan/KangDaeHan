@@ -6,11 +6,17 @@ on:
 permissions:
   contents: write # To write the generated contents to the readme
 
+
+
+
 jobs:
   update-readme-with-blog:
+  
     name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
+      - name: Set date
+        run: echo "CURRENT_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
       - name: Pull in posts
@@ -20,3 +26,6 @@ jobs:
           max_post_count: 10
           feed_names: "kakao"
           template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a></div>'
+        env:
+          DEBUG: 'true'
+          CURRENT_DATE: ${{ env.CURRENT_DATE }}
