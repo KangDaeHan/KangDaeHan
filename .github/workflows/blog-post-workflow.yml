@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Pull in dev.to posts
+        uses: actions/checkout@v4
+      - name: Pull in posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://tech.kakao.com/feed/,https://tech.kakaopay.com/rss,https://meetup.nhncloud.com/rss,https://techblog.woowahan.com/feed/,https://helloworld.kurly.com/feed,http://feeds2.feedburner.com/rss_outsider_dev"
