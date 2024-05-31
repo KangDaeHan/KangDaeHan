@@ -16,7 +16,7 @@ jobs:
       - name: Pull in posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://tech.kakao.com/feed/"
+          feed_list: "http://feeds2.feedburner.com/rss_outsider_dev"
           max_post_count: 10
-          feed_names: "kakao"
+          feed_names: "Outsider's Dev Story"
           template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a></div>'
