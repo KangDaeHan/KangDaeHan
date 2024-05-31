@@ -16,8 +16,8 @@ jobs:
       - name: Pull in posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://tech.kakao.com/feed/,https://tech.kakaopay.com/rss,https://meetup.nhncloud.com/rss,https://techblog.woowahan.com/feed/,https://helloworld.kurly.com/feed,http://feeds2.feedburner.com/rss_outsider_dev"
+          feed_list: "https://tech.kakao.com/feed/,https://tech.kakaopay.com/rss,https://techblog.woowahan.com/feed/,https://helloworld.kurly.com/feed,http://feeds2.feedburner.com/rss_outsider_dev"
           max_post_count: 10
           date_format: "UTC:yyyy-mm-dd"
-          feed_names: "kakao,kakaopay,NHNCloud,우아한형제들,컬리,Outsider's Dev Story"
-          template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a></div>'
+          feed_names: "kakao,kakaopay,우아한형제들,컬리,Outsider's Dev Story"
+          template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a> ($date)</div>'
