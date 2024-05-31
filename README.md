@@ -41,32 +41,3 @@ Here are some ideas to get you started:
 <!-- BLOG-POST-LIST:START --><div>:pushpin:[Outsider's Dev Story] <a target="_blank" href="https://blog.outsider.ne.kr/1722">기술 뉴스 #246 : 24-05-16</a> (2024-05-15)</div><div>:pushpin:[Outsider's Dev Story] <a target="_blank" href="https://blog.outsider.ne.kr/1721">[Book] 켄트 벡의 Tidy First? - 더 나은 소프트웨어 설계를 위한 32가지 코드 정리법</a> (2024-05-14)</div><div>:pushpin:[kakao] <a target="_blank" href="https://tech.kakao.com/2024/05/13/golang-gc-tuning-guide/">Golang GC 튜닝 가이드</a> (2024-05-13)</div><div>:pushpin:[우아한형제들] <a target="_blank" href="https://techblog.woowahan.com/16910/">웹 애플리케이션 페이지를 패키지로 개발해 본 경험 공유</a> (2024-05-09)</div><div>:pushpin:[우아한형제들] <a target="_blank" href="https://techblog.woowahan.com/17328/">[모집 마감] 우아한스터디 2024 여름시즌</a> (2024-05-08)</div><div>:pushpin:[우아한형제들] <a target="_blank" href="https://techblog.woowahan.com/15660/">우아한스터디 2023 여름시즌 후기: 쏙쏙 들어오는 함수형 코딩</a> (2024-05-08)</div><div>:pushpin:[NHNCloud] <a target="_blank" href="https://meetup.nhncloud.com/posts/381">보이스피싱 애플리케이션 분석 1부</a> (2024-05-08)</div><div>:pushpin:[Outsider's Dev Story] <a target="_blank" href="https://blog.outsider.ne.kr/1720">[Book] 규칙 없음 - 넷플릭스, 지구상 가장 빠르고 유연한 기업의 비밀</a> (2024-05-05)</div><div>:pushpin:[우아한형제들] <a target="_blank" href="https://techblog.woowahan.com/17241/">배민선물하기 AI 메시지 제작기: 생성 AI가 센스 있는 선물 메시지를 대신 쓰기까지</a> (2024-05-02)</div><div>:pushpin:[Outsider's Dev Story] <a target="_blank" href="https://blog.outsider.ne.kr/1719">기술 뉴스 #245 : 24-05-01</a> (2024-05-01)</div><!-- BLOG-POST-LIST:END -->
 
 <!-- ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KangDaeHan&show_icons=true&theme=radical) -->
-<!--
-### 📫 Blog
-<table><tbody><tr>
-<td>
-    <a href="https://yeonyeon.tistory.com/312">
-        <div>[인프콘 후기] 2023 INFCON </div>
-    </a>
-    <div>1. 인프콘에 참가하다 🙂 어떻게 참가할 수 있었는가 때는 2023년 7월 18일 12시 48분. 인프콘 추첨 결과 공개까지 12... </div>
-    <div>23.08.16</div>
-</td>
-<td>
-    <a href="https://yeonyeon.tistory.com/311">
-        <img width="100%" src="/img/8066187260670780795.png"/><br/>
-        <div>[Git] 머지 커밋 revert 하기 </div>
-    </a>
-    <div>🤔 git revert란? git revert란 일부 기존의 커밋들을 되돌리는 작업이다. git reset과는 다른 것이, git reset은 기... </div>
-    <div>23.08.13</div>
-</td>
-<td>
-    <a href="https://yeonyeon.tistory.com/310">
-        <img width="100%" src="/img/9188834980247484156.png"/><br/>
-        <div>[Spring Batch] 개념부터 코드까지 </div>
-    </a>
-    <div>목차 1. Spring Batch란? 2. Spring Batch 구조 3. 기본적인 세팅 4. Job, Step 5. ItemReader, ItemProcessor,  ItemW... </div>
-    <div>23.07.21</div>
-</td>
-</tr>
-</tbody></table>
--->
