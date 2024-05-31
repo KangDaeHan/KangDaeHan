@@ -19,7 +19,7 @@ jobs:
           feed_list: "https://tech.kakao.com/feed/"
           max_post_count: 10
           feed_names: "kakao"
-          date_format: "yyyy-mm-dd"
+          date_format: "ddd, dd mmm yyyy HH:MM:ss ZZ"
           template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a></div>'
         env:
           DEBUG: 'true'
