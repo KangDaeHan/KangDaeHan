@@ -16,7 +16,8 @@ jobs:
       - name: Pull in posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "http://feeds2.feedburner.com/rss_outsider_dev"
+          feed_list: "https://tech.kakaopay.com/rss,http://feeds2.feedburner.com/rss_outsider_dev,https://helloworld.kurly.com/feed"
           max_post_count: 10
-          feed_names: "Outsider's Dev Story"
-          template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a></div>'
+          date_format: "UTC:yyyy-mm-dd"
+          feed_names: "Kakaopay,Outsider's Dev Story,Kurly"
+          template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a> ($date)</div>'
