@@ -16,8 +16,8 @@ jobs:
       - name: Pull in posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://medium.com/feed/daangn,https://toss.tech/rss.xml,https://techblog.lycorp.co.jp/ko/feed/index.xml,https://techblog.woowahan.com/feed,https://tech.kakaopay.com/rss,http://feeds2.feedburner.com/rss_outsider_dev,https://helloworld.kurly.com/feed"
+          feed_list: "https://medium.com/feed/daangn,https://toss.tech/rss.xml,https://techblog.lycorp.co.jp/ko/feed/index.xml,https://tech.kakaopay.com/rss,http://feeds2.feedburner.com/rss_outsider_dev,https://helloworld.kurly.com/feed"
           max_post_count: 10
           date_format: "UTC:yyyy-mm-dd"
-          feed_names: "Daangn,Toss,Line,Woowahan,Kakaopay,Outsider's Dev Story,Kurly"
+          feed_names: "Daangn,Toss,Line,Kakaopay,Outsider's Dev Story,Kurly"
           template: '<div>$randomEmoji(:pushpin:)[$feedName] <a target="_blank" href="$url">$title</a> ($date)</div>'
