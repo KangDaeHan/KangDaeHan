@@ -6,7 +6,7 @@ from datetime import datetime
 # 1. 공릉 2동 좌표
 LAT = "37.5665" 
 LON = "126.9780"
-API_KEY = os.environ.get('b9af838d88199f8830657cf1b17217e2')
+API_KEY = "b9af838d88199f8830657cf1b17217e2"
 
 # 'weather' 대신 'forecast' 엔드포인트 사용 (5일/3시간 예보)
 URL = f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}&appid={API_KEY}&units=metric&lang=kr"
