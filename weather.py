@@ -11,47 +11,62 @@ API_KEY = os.environ.get('b9af838d88199f8830657cf1b17217e2')
 # 'weather' 대신 'forecast' 엔드포인트 사용 (5일/3시간 예보)
 URL = f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}&appid={API_KEY}&units=metric&lang=kr"
 
-def get_weather_emoji(icon_code):
-    icon_map = {
-        "01d": "☀️", "01n": "🌙", "02d": "⛅", "02n": "⛅",
-        "03d": "☁️", "03n": "☁️", "04d": "☁️", "04n": "☁️",
-        "09d": "🌧️", "09n": "🌧️", "10d": "☔", "10n": "☔",
-        "11d": "⚡", "11n": "⚡", "13d": "❄️", "13n": "❄️",
-        "50d": "🌫️", "50n": "🌫️"
-    }
-    return icon_map.get(icon_code, "🌡️")
+emoji_gifs = {
+    # 맑음 (낮/밤)
+    "01d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sun.png", 
+    "01n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Crescent%20Moon.png",
+    
+    # 구름 (낮/밤 구분 없이 구름 사용하거나 구분 가능)
+    "02d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sun%20Behind%20Large%20Cloud.png",
+    "02n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Crescent%20Moon.png", # 밤 구름 대체
+    "03d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud.png",
+    "03n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud.png",
+    "04d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud.png",
+    "04n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud.png",
+    
+    # 비
+    "09d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Rain.png",
+    "09n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Rain.png",
+    "10d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Rain.png",
+    "10n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Rain.png",
+    
+    # 천둥번개
+    "11d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Lightning%20and%20Rain.png",
+    "11n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Lightning%20and%20Rain.png",
+    
+    # 눈
+    "13d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Snowflake.png",
+    "13n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Snowflake.png",
+    
+    # 안개
+    "50d": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fog.png",
+    "50n": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fog.png",
+}
+
+# 기본 이미지 (매칭 안될 때)
+DEFAULT_ICON = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Thermometer.png"
+
+def get_anim_emoji(icon_code):
+    url = emoji_gifs.get(icon_code, DEFAULT_ICON)
+    # HTML 이미지 태그를 사용하여 크기를 25px로 제한 (텍스트와 어울리게)
+    return f'<img src="{url}" width="25" height="25" style="vertical-align:middle" />'
 
 try:
     response = requests.get(URL)
     data = response.json()
 
-    # forecast 데이터는 'list' 안에 3시간 간격으로 들어있습니다.
-    # index 0: 가장 가까운 시간 (현재~3시간 이내)
-    # index 1: +3시간 뒤
-    # index 2: +6시간 뒤
+    temp = round(data['main']['temp'], 1)
+    desc = data['weather'][0]['description']
+    icon = data['weather'][0]['icon']
     
-    forecasts = []
+    # 움직이는 이모지 태그 생성
+    anim_emoji = get_anim_emoji(icon)
     
-    # 3개 구간만 뽑아서 표시 (현재 -> 3시간후 -> 6시간후)
-    for i in range(3):
-        item = data['list'][i]
-        dt_txt = item['dt_txt'] # 예: 2024-05-20 15:00:00
-        temp = round(item['main']['temp'], 1)
-        desc = item['weather'][0]['description']
-        icon = item['weather'][0]['icon']
-        emoji = get_weather_emoji(icon)
-        
-        # 시간만 추출 (예: 15:00)
-        time_only = dt_txt.split(" ")[1][:5]
-        
-        forecasts.append(f"{time_only} {emoji} {temp}°C")
-
-    # 출력 형식 만들기
-    # 예: 서울 예보: 12:00 ☀️ 24°C → 15:00 ⛅ 23°C → 18:00 ☁️ 21°C
-    weather_text = f"서울 공릉2동 예보: {' → '.join(forecasts)}"
+    # 출력 예시: 서울 날씨: 맑음 <움직이는해> 24.5°C
+    weather_text = f"공릉2동 날씨: {desc} {anim_emoji} {temp}°C"
     print(weather_text)
 
-    # 2. README 업데이트
+    # 3. README 업데이트
     readme_path = 'README.md'
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
