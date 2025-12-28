@@ -99,5 +99,5 @@ async function fetchWeatherAndUpdateBg() {
 // 페이지 로드 시 최초 실행
 fetchWeatherAndUpdateBg();
 
-// (선택사항) 10분(600000ms)마다 날씨 갱신하여 배경 업데이트
-// setInterval(fetchWeatherAndUpdateBg, 600000);
+// 6시간(21,600,000ms)마다 날씨 갱신 및 배경 교체 실행
+setInterval(fetchWeatherAndUpdateBg, 21600000);
