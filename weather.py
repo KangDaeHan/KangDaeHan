@@ -9,7 +9,7 @@ LON = "126.9780"
 API_KEY = "b9af838d88199f8830657cf1b17217e2"
 
 # 'weather' 대신 'forecast' 엔드포인트 사용 (5일/3시간 예보)
-URL = f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}&appid={API_KEY}&units=metric&lang=kr"
+URL = f"https://api.openweathermap.org/data/2.5/weather?q=Seoul,ko&APPID={API_KEY}&units=metric&lang=kr"
 
 emoji_gifs = {
     # 맑음 (낮/밤)
