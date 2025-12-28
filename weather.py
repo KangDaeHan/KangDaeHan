@@ -4,8 +4,8 @@ import re
 from datetime import datetime
 
 # 1. 공릉 2동 좌표
-LAT = "37.6211" 
-LON = "127.0834"
+LAT = "37.5665" 
+LON = "126.9780"
 API_KEY = os.environ.get('b9af838d88199f8830657cf1b17217e2')
 
 # 'weather' 대신 'forecast' 엔드포인트 사용 (5일/3시간 예보)
@@ -63,7 +63,7 @@ try:
     anim_emoji = get_anim_emoji(icon)
     
     # 출력 예시: 서울 날씨: 맑음 <움직이는해> 24.5°C
-    weather_text = f"공릉2동 날씨: {desc} {anim_emoji} {temp}°C"
+    weather_text = f"서울 날씨: {desc} {anim_emoji} {temp}°C"
     print(weather_text)
 
     # 3. README 업데이트
