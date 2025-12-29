@@ -48,8 +48,7 @@ DEFAULT_ICON = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fl
 
 def get_anim_emoji(icon_code):
     url = emoji_gifs.get(icon_code, DEFAULT_ICON)
-    # HTML 이미지 태그를 사용하여 크기를 25px로 제한 (텍스트와 어울리게)
-    return f'<img src="{url}" width="35" height="35" align="center" />'
+    return f'<img src="{url}" width="45" height="45" align="center" />'
 
 try:
     response = requests.get(URL)
