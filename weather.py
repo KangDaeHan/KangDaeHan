@@ -63,7 +63,7 @@ try:
     anim_emoji = get_anim_emoji(icon)
     
     # 출력 예시: 서울 날씨: 맑음 <움직이는해> 24.5°C
-    weather_text = f'<div style="vertical-align:middle">서울 날씨: {desc} {anim_emoji} {temp}°C</div>'
+    weather_text = f'서울 날씨: {desc} {anim_emoji} {temp}°C'
     print(f"생성된 날씨 문구: {weather_text}")
 
     # README 업데이트
@@ -76,21 +76,39 @@ try:
     # re.escape()를 사용하여 , : 같은 특수문자가 정규식 명령어로 오해받지 않게 함
     start_tag = ""
     end_tag = ""
-    
-    # 정규표현식: "start_tag" + "아무거나(줄바꿈포함)" + "end_tag"
-    # [\s\S]*? : 줄바꿈을 포함한 모든 문자, 비탐욕적(가장 가까운 end_tag까지만 찾음)
-    pattern = f"{re.escape(start_tag)}[\s\S]*?{re.escape(end_tag)}"
+
+    # find는 찾으면 위치(숫자)를 반환하고, 없으면 -1을 반환합니다.
+    start_index = content.find(start_tag)
+    end_index = content.find(end_tag)
+
+    # 디버깅용 출력 (Actions 로그에서 확인 가능)
+    print(f"🔍 위치 검색 결과: START위치={start_index}, END위치={end_index}")
     
     # 교체할 내용 (주석 태그는 유지하고 내용만 바꿈)
     replacement = f"{start_tag}\n{weather_text}\n{end_tag}"
 
     # 검색 및 교체 실행
-    if re.search(pattern, content):
-        print("✅ [WEATHER] 주석을 정확히 찾았습니다. 내용을 업데이트합니다.")
-        new_content = re.sub(pattern, replacement, content)
+    if start_index != -1 and end_index != -1:
+        # 1. 두 태그가 모두 존재할 때 (정상)
+        print("✅ 주석 태그를 발견했습니다. 해당 구간만 교체합니다.")
+        
+        # 앞부분: 처음부터 ~ 시작 태그가 끝나는 지점까지
+        before_part = content[:start_index + len(start_tag)]
+        
+        # 뒷부분: 종료 태그 시작 지점부터 ~ 파일 끝까지
+        after_part = content[end_index:]
+        
+        # 새 내용 조립: (앞부분) + (줄바꿈+날씨+줄바꿈) + (뒷부분)
+        new_content = before_part + "\n" + weather_text + "\n" + after_part
+        
     else:
-        print("⚠️ [WEATHER] 주석을 찾지 못했습니다. 파일 맨 뒤에 새로 추가합니다.")
-        new_content = content + "\n" + replacement
+        # 2. 태그를 못 찾았을 때 (비정상)
+        print("⚠️ 태그를 찾을 수 없습니다. 파일 맨 뒤에 새로 추가합니다.")
+        print(f"   (참조: 파일 내 실제 내용 일부 -> {content[:50]}...)")
+        
+        # 혹시 모르니 기존에 있을 수도 있는 태그들을 한번 더 정리하고 추가
+        # (무한 증식 방지용 안전장치는 수동 청소가 제일 확실합니다)
+        new_content = content + f"\n\n{start_tag}\n{weather_text}\n{end_tag}"
 
     # 수정된 전체 내용을 다시 씁니다.
     with open(readme_path, 'w', encoding='utf-8') as f:
