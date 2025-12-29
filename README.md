@@ -1,5 +1,5 @@
 <!-- WEATHER:START -->
-<div align="right"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fog.png" width="35" height="35" align="center" /><br/>서울: 연무 / 8.8°C</div>
+<div align="right"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fog.png" width="35" height="35" align="center" /><br/>서울: 박무 / 3.8°C</div>
 <!-- WEATHER:END -->
 
 ### 👋 Welcome my github
