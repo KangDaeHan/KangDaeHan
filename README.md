@@ -1,8 +1,8 @@
 ### 👋 Welcome my github
 
 안녕하세요. 프론트개발자 강대한입니다.
-<br><br>
-<!-- WEATHER:START --><div>현재 서울 날씨: mist <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fog.png" width="25" height="25" style="vertical-align:middle" /> 275.9°C</div><!-- WEATHER:END -->
+<br>
+<!-- WEATHER:START --><div>서울 날씨: mist <span style="vertical-align:middle;"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fog.png" width="25" height="25" style="vertical-align:middle" /></span> 275.9°C</div><!-- WEATHER:END -->
 
 <!--
 ![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=Welcome&fontAlignY=40&desc=KangDaeHan%20github%20&descSize=20&descAlignY=55&animation=fadeIn&fontSize=90)
@@ -21,6 +21,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+<br>
 <a href="https://twinfamily.github.io" target="_blank"><img src="https://img.shields.io/badge/Blog-121D33?style=flat-square&logo=blogger&logoColor=ffffff"/></a>
 
 ### :books: Skills
