@@ -63,7 +63,7 @@ try:
     anim_emoji = get_anim_emoji(icon)
     
     # 출력 예시: 서울 날씨: 맑음 <움직이는해> 24.5°C
-    weather_text = f"서울 날씨: {desc} {anim_emoji} {temp}°C"
+    weather_text = f'<div style="vertical-align:middle">서울 날씨: {desc} {anim_emoji} {temp}°C</div>'
     print(f"생성된 날씨 문구: {weather_text}")
 
     # README 업데이트
