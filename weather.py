@@ -73,19 +73,23 @@ try:
         content = f.read()
 
     # 정규표현식 패턴: 주석 사이의 공백이나 줄바꿈이 변해도 찾을 수 있게 유연하게 설정
-    # 와 사이의 모든 문자를 찾음
-    pattern = r'[\s\S]*?'
+    # re.escape()를 사용하여 , : 같은 특수문자가 정규식 명령어로 오해받지 않게 함
+    start_tag = ""
+    end_tag = ""
     
-    # 교체할 문자열 (주석 포함해서 전체를 갈아끼움)
-    replacement = f'\n{weather_text}\n'
+    # 정규표현식: "start_tag" + "아무거나(줄바꿈포함)" + "end_tag"
+    # [\s\S]*? : 줄바꿈을 포함한 모든 문자, 비탐욕적(가장 가까운 end_tag까지만 찾음)
+    pattern = f"{re.escape(start_tag)}[\s\S]*?{re.escape(end_tag)}"
+    
+    # 교체할 내용 (주석 태그는 유지하고 내용만 바꿈)
+    replacement = f"{start_tag}\n{weather_text}\n{end_tag}"
 
+    # 검색 및 교체 실행
     if re.search(pattern, content):
-        print("✅ 기존 날씨 블록을 찾았습니다. 내용을 교체합니다.")
-        # 기존 블록을 찾아서 -> 새 블록으로 통째로 교체
+        print("✅ [WEATHER] 주석을 정확히 찾았습니다. 내용을 업데이트합니다.")
         new_content = re.sub(pattern, replacement, content)
     else:
-        print("⚠️ 기존 날씨 블록을 찾지 못했습니다. 파일 맨 끝에 추가합니다.")
-        # 없으면 맨 뒤에 추가
+        print("⚠️ [WEATHER] 주석을 찾지 못했습니다. 파일 맨 뒤에 새로 추가합니다.")
         new_content = content + "\n" + replacement
 
     # 수정된 전체 내용을 다시 씁니다.
