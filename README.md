@@ -2,8 +2,7 @@
 
 안녕하세요. 프론트개발자 강대한입니다.
 <br>
-<!-- WEATHER:START -->
-<!-- WEATHER:END -->
+<!-- WEATHER:START --><!-- WEATHER:END -->
 
 <!--
 ![header](https://capsule-render.vercel.app/api?type=Waving&color=auto&height=300&section=header&text=Welcome&fontAlignY=40&desc=KangDaeHan%20github%20&descSize=20&descAlignY=55&animation=fadeIn&fontSize=90)
