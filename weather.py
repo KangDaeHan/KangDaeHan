@@ -49,7 +49,7 @@ DEFAULT_ICON = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fl
 def get_anim_emoji(icon_code):
     url = emoji_gifs.get(icon_code, DEFAULT_ICON)
     # HTML 이미지 태그를 사용하여 크기를 25px로 제한 (텍스트와 어울리게)
-    return f'<img src="{url}" width="25" height="25" align="center" />'
+    return f'<img src="{url}" width="35" height="35" align="center" />'
 
 try:
     response = requests.get(URL)
@@ -63,7 +63,7 @@ try:
     anim_emoji = get_anim_emoji(icon)
     
     # 출력 예시: 서울 날씨: 맑음 <움직이는해> 24.5°C
-    weather_text = f'<div align="right">{anim_emoji}<br/>서울 날씨: {desc} / {temp}°C</div>'
+    weather_text = f'<div align="right">{anim_emoji}<br/>서울: {desc} / {temp}°C</div>'
     print(f"생성된 날씨 문구: {weather_text}")
 
     # README 업데이트
