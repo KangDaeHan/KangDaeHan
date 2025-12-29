@@ -72,20 +72,21 @@ try:
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 주석이 있는지 확인합니다.
-    if "" not in content or "" not in content:
-        print("⚠️ 주의: README.md에 주석(Marker)이 없습니다. 파일 맨 끝에 날씨를 추가합니다.")
-        # 주석이 없으면 기존 내용 뒤에 덧붙임 (덮어쓰기 방지)
-        new_content = content + f"\n\n\n{weather_text}\n"
+    # 정규표현식 패턴: 주석 사이의 공백이나 줄바꿈이 변해도 찾을 수 있게 유연하게 설정
+    # 와 사이의 모든 문자를 찾음
+    pattern = r'[\s\S]*?'
+    
+    # 교체할 문자열 (주석 포함해서 전체를 갈아끼움)
+    replacement = f'\n{weather_text}\n'
+
+    if re.search(pattern, content):
+        print("✅ 기존 날씨 블록을 찾았습니다. 내용을 교체합니다.")
+        # 기존 블록을 찾아서 -> 새 블록으로 통째로 교체
+        new_content = re.sub(pattern, replacement, content)
     else:
-        # 정규표현식 검색 (WEATHER:START ~ WEATHER:END)
-        # re.DOTALL: 줄바꿈이 있어도 검색 가능하게 함
-        new_content = re.sub(
-            r'.*?', 
-            f'\n{weather_text}\n', 
-            content, 
-            flags=re.DOTALL
-        )
+        print("⚠️ 기존 날씨 블록을 찾지 못했습니다. 파일 맨 끝에 추가합니다.")
+        # 없으면 맨 뒤에 추가
+        new_content = content + "\n" + replacement
 
     # 수정된 전체 내용을 다시 씁니다.
     with open(readme_path, 'w', encoding='utf-8') as f:
