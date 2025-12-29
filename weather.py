@@ -8,7 +8,7 @@ LAT = "37.5665"
 LON = "126.9780"
 API_KEY = os.environ.get('OPENWEATHER_API_KEY')
 
-# 'weather' 대신 'forecast' 엔드포인트 사용 (5일/3시간 예보)
+# 'weather' 엔드포인트 사용 (5일/3시간 예보)
 URL = f"https://api.openweathermap.org/data/2.5/weather?q=Seoul,kr&APPID={API_KEY}&units=metric&lang=kr"
 
 emoji_gifs = {
@@ -74,8 +74,8 @@ try:
 
     # 정규표현식 패턴: 주석 사이의 공백이나 줄바꿈이 변해도 찾을 수 있게 유연하게 설정
     # re.escape()를 사용하여 , : 같은 특수문자가 정규식 명령어로 오해받지 않게 함
-    start_tag = ""
-    end_tag = ""
+    start_tag = "<!-- WEATHER:START -->"
+    end_tag = "<!-- WEATHER:END -->"
 
     # find는 찾으면 위치(숫자)를 반환하고, 없으면 -1을 반환합니다.
     start_index = content.find(start_tag)
