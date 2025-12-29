@@ -67,6 +67,7 @@ try:
     print(f"생성된 날씨 문구: {weather_text}")
 
     # README 업데이트
+    readme_path = 'README.md'
     # 기존 파일 내용을 '읽기 모드(r)'로 전부 가져옵니다.
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -77,7 +78,7 @@ try:
         # 주석이 없으면 기존 내용 뒤에 덧붙임 (덮어쓰기 방지)
         new_content = content + f"\n\n\n{weather_text}\n"
     else:
-        # 정규표현식으로 주석 사이의 내용만 '쏙' 교체합니다.
+        # 정규표현식 검색 (WEATHER:START ~ WEATHER:END)
         # re.DOTALL: 줄바꿈이 있어도 검색 가능하게 함
         new_content = re.sub(
             r'.*?', 
