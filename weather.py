@@ -9,7 +9,7 @@ LON = "126.9780"
 API_KEY = os.environ.get('OPENWEATHER_API_KEY')
 
 # 'weather' 대신 'forecast' 엔드포인트 사용 (5일/3시간 예보)
-URL = f"https://api.openweathermap.org/data/2.5/weather?q=Seoul,kr&APPID={API_KEY}"
+URL = f"https://api.openweathermap.org/data/2.5/weather?q=Seoul,kr&APPID={API_KEY}&units=metric&lang=kr"
 
 emoji_gifs = {
     # 맑음 (낮/밤)
@@ -64,22 +64,33 @@ try:
     
     # 출력 예시: 서울 날씨: 맑음 <움직이는해> 24.5°C
     weather_text = f"서울 날씨: {desc} {anim_emoji} {temp}°C"
-    print(weather_text)
+    print(f"생성된 날씨 문구: {weather_text}")
 
-    # 3. README 업데이트
-    readme_path = 'README.md'
+    # README 업데이트
+    # 기존 파일 내용을 '읽기 모드(r)'로 전부 가져옵니다.
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    new_content = re.sub(
-        r'.*',
-        f'\n{weather_text}\n',
-        content,
-        flags=re.DOTALL
-    )
+    # 주석이 있는지 확인합니다.
+    if "" not in content or "" not in content:
+        print("⚠️ 주의: README.md에 주석(Marker)이 없습니다. 파일 맨 끝에 날씨를 추가합니다.")
+        # 주석이 없으면 기존 내용 뒤에 덧붙임 (덮어쓰기 방지)
+        new_content = content + f"\n\n\n{weather_text}\n"
+    else:
+        # 정규표현식으로 주석 사이의 내용만 '쏙' 교체합니다.
+        # re.DOTALL: 줄바꿈이 있어도 검색 가능하게 함
+        new_content = re.sub(
+            r'.*?', 
+            f'\n{weather_text}\n', 
+            content, 
+            flags=re.DOTALL
+        )
 
+    # 수정된 전체 내용을 다시 씁니다.
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
+        
+    print("✅ README.md 업데이트 완료!")
 
 except Exception as e:
     print(f"에러 발생: {e}")
