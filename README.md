@@ -24,6 +24,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <a href="https://twinfamily.github.io" target="_blank"><img src="https://img.shields.io/badge/Blog-121D33?style=flat-square&logo=blogger&logoColor=ffffff"/></a>
+<a href="https://twinfamily.notion.site/Project-Portfolio-2d6f76ecf12d80d1ac05fa50d1e0e12a" target="_blank"><img src="https://img.shields.io/badge/Portfolio-0077B5?style=flat-square&logo=linkedin&logoColor=ffffff"/></a>
 
 ### :books: Skills
 <a href="#" target="_blank"><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=ffffff"/></a>
