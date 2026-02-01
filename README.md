@@ -1,5 +1,5 @@
 <!-- WEATHER:START -->
-<div align="right"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Crescent%20Moon.png" width="45" height="45" align="center" /><br/>서울(맑음)<br/>-1.2°C</div>
+<div align="right"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Snowflake.png" width="45" height="45" align="center" /><br/>서울(가벼운 눈)<br/>-4.2°C</div>
 <!-- WEATHER:END -->
 
 ### 👋 Welcome my github
